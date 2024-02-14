@@ -2,7 +2,7 @@
 $packageName    = '8x8Work'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url64          = 'https://vod-updates.8x8.com/ga/work-64-msi-v8.10.3-2.msi'
-$checksum64     = '64FEA48CE93A05A628B5C62016922469AA88452223435D4593E53F382B38418C'
+$checksum64     = 'B0753C8DAA610B27047068C0740B1E1CD837CBC2703957E44618D1AEC65A4852'
 
 $packageArgs = @{
   packageName    = $packageName
