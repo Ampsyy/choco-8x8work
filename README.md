@@ -27,6 +27,9 @@ By following these steps, you can help ensure that the Choco 8x8work package rem
      ```powershell
      choco install 8x8work --debug --verbose --source .
      ```
+     ```powershell
+     choco upgrade 8x8work -source="<GIT-LOCATION>\8x8work"
+     ```
 3. **Publish:**
    - Once confirmed working the new package can be pushed using:
      ```powershell
