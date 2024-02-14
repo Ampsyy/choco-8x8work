@@ -8,7 +8,7 @@
     <owners>8x8</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://8x8.com/</projectUrl>
-    <iconUrl>https://www.8x8.com/icons/icon-512x512.png?v=34d63ccce2ad2b59d709decf27324b1c</iconUrl>
+    <iconUrl>https://www.8x8.com/icons/icon-512x512.png</iconUrl>
     <description>8x8 Work for desktop version 8.10.3.2. This will install the latest version of 8x8 work on windows devices</description>
     <summary>VoIP Software</summary>
     <releaseNotes>https://support.8x8.com/cloud-phone-service/voice/work-desktop/download-8x8-work-for-desktop#What's_new_in_this_release.3F</releaseNotes>
