@@ -14,6 +14,7 @@
     <releaseNotes>https://support.8x8.com/cloud-phone-service/voice/work-desktop/download-8x8-work-for-desktop#What's_new_in_this_release.3F</releaseNotes>
     <copyright>2021 8x8, Inc. All rights reserved.</copyright>
     <tags>8x8work voip phone chat meetings work</tags>
+    <packageSourceUrl>https://github.com/Ampsyy/choco-8x8work</packageSourceUrl>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
