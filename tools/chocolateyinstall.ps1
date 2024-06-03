@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName    = '8x8Work'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://vod-updates.8x8.com/ga/work-64-msi-v8.11.2-4.msi'
-$checksum64     = 'ED25E3B22696832709CB5486CEE76B374E943E191945043BAEAF16C7477EB869'
+$url64          = 'https://vod-updates.8x8.com/ga/work-64-msi-v8.13.2-4.msi'
+$checksum64     = '519901EB8785532F9F316002AB05F7418290C8014A4FF77BB083A177569195EC'
 
 $packageArgs = @{
   packageName    = $packageName
