@@ -2,6 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>8x8work</id>
+
     <version>8.18.2.7</version>
     <title>8x8work (Install)</title>
     <authors>8x8 Inc.</authors>
