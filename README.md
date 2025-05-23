@@ -1,3 +1,5 @@
+[![Build and Publish Chocolatey Package](https://github.com/Ampsyy/choco-8x8work/actions/workflows/pack-and-release.yml/badge.svg?branch=main)](https://github.com/Ampsyy/choco-8x8work/actions/workflows/pack-and-release.yml)
+
 # Choco-8x8work Repository
 
 This repository is dedicated to the Choco 8x8work package, which is available on the Chocolatey community packages website at [Choco 8x8work Package](https://community.chocolatey.org/packages/8x8work).
