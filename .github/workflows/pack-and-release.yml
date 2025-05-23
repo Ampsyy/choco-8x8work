@@ -1,0 +1,39 @@
+name: Build and Push Chocolatey Package
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build and Push Choco Package
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Chocolatey CLI
+        run: |
+          Set-ExecutionPolicy Bypass -Scope Process -Force
+          iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
+      - name: Parse version from .nuspec
+        id: version
+        run: |
+          [xml]$nuspec = Get-Content *.nuspec
+          $version = $nuspec.package.metadata.version
+          echo "Parsed version: $version"
+          echo "version=$version" >> $env:GITHUB_OUTPUT
+
+      - name: Pack Chocolatey package
+        run: choco pack
+
+      - name: Push to Chocolatey.org
+        env:
+          CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+        run: |
+          $pkg = Get-ChildItem *.nupkg | Where-Object { $_.Name -match "${{ steps.version.outputs.version }}" }
+          choco push $pkg.FullName --source https://push.chocolatey.org/ --api-key $env:CHOCO_API_KEY
